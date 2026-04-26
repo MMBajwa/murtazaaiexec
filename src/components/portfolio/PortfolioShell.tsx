@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 const navItems = [
   { to: "/", label: "Home" },
   { to: "/expertise", label: "Expertise" },
+  { to: "/seo-map", label: "SEO Map" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
