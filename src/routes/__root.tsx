@@ -5,16 +5,16 @@ import appCss from "../styles.css?url";
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
+      <div className="executive-card max-w-md rounded-xl p-8 text-center">
+        <h1 className="font-display text-7xl font-extrabold text-foreground">404</h1>
+        <h2 className="mt-4 text-xl font-bold text-foreground">Page not found</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved.
+          This page is not part of the Murtaza AI Works portfolio.
         </p>
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5"
           >
             Go home
           </Link>
@@ -29,20 +29,27 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Murtaza AI Works | AI Engineer Portfolio" },
+      {
+        name: "description",
+        content:
+          "Muhammad Murtaza Baber Bajwa portfolio for AI engineering, full-stack development, agentic AI workflows, and design-to-code delivery.",
+      },
+      { name: "author", content: "Muhammad Murtaza Baber Bajwa" },
+      { property: "og:title", content: "Murtaza AI Works | AI Engineer Portfolio" },
+      {
+        property: "og:description",
+        content: "AI/ML engineer and full-stack developer building practical AI systems, polished React apps, and business-ready workflows.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
       },
+      { rel: "canonical", href: "https://murtaza-ai-works.com" },
     ],
   }),
   shellComponent: RootShell,
