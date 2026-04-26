@@ -9,16 +9,10 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SeoMapRouteImport } from './routes/seo-map'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as IndexRouteImport } from './routes/index'
 
-const SeoMapRoute = SeoMapRouteImport.update({
-  id: '/seo-map',
-  path: '/seo-map',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ExpertiseRoute = ExpertiseRouteImport.update({
   id: '/expertise',
   path: '/expertise',
@@ -39,45 +33,34 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
-  '/seo-map': typeof SeoMapRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
-  '/seo-map': typeof SeoMapRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
-  '/seo-map': typeof SeoMapRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contact' | '/expertise' | '/seo-map'
+  fullPaths: '/' | '/contact' | '/expertise'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contact' | '/expertise' | '/seo-map'
-  id: '__root__' | '/' | '/contact' | '/expertise' | '/seo-map'
+  to: '/' | '/contact' | '/expertise'
+  id: '__root__' | '/' | '/contact' | '/expertise'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ContactRoute: typeof ContactRoute
   ExpertiseRoute: typeof ExpertiseRoute
-  SeoMapRoute: typeof SeoMapRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/seo-map': {
-      id: '/seo-map'
-      path: '/seo-map'
-      fullPath: '/seo-map'
-      preLoaderRoute: typeof SeoMapRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/expertise': {
       id: '/expertise'
       path: '/expertise'
@@ -106,7 +89,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ContactRoute: ContactRoute,
   ExpertiseRoute: ExpertiseRoute,
-  SeoMapRoute: SeoMapRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
