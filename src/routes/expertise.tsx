@@ -25,20 +25,23 @@ const projects = [
   {
     title: "AI Car Recommendation Engine",
     stack: "Python · Scikit-learn · BeautifulSoup · Cosine Similarity",
-    detail:
-      "Scraped and processed 10,000+ PakWheels listings, then built a ranking pipeline that matches buyer preferences across price, mileage, make, and model.",
+    problem: "Used-car buyers face noisy listings, inconsistent pricing, and too many choices without a clear recommendation path.",
+    process: "Scraped 10,000+ PakWheels listings, cleaned the data, extracted practical buying signals, and ranked matches by price, mileage, make, and model.",
+    result: "A real-world ML product concept that shows applied recommendation logic, not just academic model training.",
   },
   {
     title: "Linux Command Helper",
     stack: "Python · NLP · Vector Embeddings · Similarity Search",
-    detail:
-      "Built a CLI autocorrect tool that interprets malformed Linux commands and suggests the closest valid alternative through a custom NLP pipeline.",
+    problem: "Students and Linux beginners lose time when malformed commands fail without useful direction.",
+    process: "Built tokenization, vector representation, similarity scoring, and ranked suggestions from scratch for command correction.",
+    result: "A practical developer utility that demonstrates NLP fundamentals through a workflow people can actually use.",
   },
   {
     title: "Design-to-Code Implementations",
     stack: "Lovable · v0 · Cursor · React · Next.js",
-    detail:
-      "Converted mockups, screenshots, and UI references into responsive web applications with refined layouts, interactivity, and deployment-ready structure.",
+    problem: "Founders and clients often have a screenshot, wireframe, or Figma idea but need it converted into a working interface fast.",
+    process: "Used AI-native generation tools for scaffolding, then refined responsiveness, layout consistency, component structure, and deployment readiness.",
+    result: "A repeatable agentic delivery pipeline: reference → generated build → Cursor refinement → polished React product.",
   },
 ];
 
@@ -52,8 +55,8 @@ function ExpertisePage() {
       <section className="px-5 py-16 sm:px-8 lg:py-24">
         <div className="mx-auto max-w-7xl">
           <Reveal>
-            <p className="text-sm font-extrabold uppercase tracking-normal text-accent">Proof of work</p>
-            <h1 className="mt-4 max-w-4xl font-display text-5xl font-extrabold leading-tight text-foreground sm:text-7xl">
+            <p className="text-sm font-bold uppercase tracking-normal text-accent">Proof of work</p>
+            <h1 className="mt-4 max-w-4xl font-display text-5xl font-bold leading-tight text-foreground sm:text-7xl">
               Applied AI, clean interfaces, and business-facing execution.
             </h1>
             <p className="mt-6 max-w-3xl text-lg font-medium leading-8 text-muted-foreground">
@@ -68,10 +71,14 @@ function ExpertisePage() {
           {projects.map((project, index) => (
             <Reveal key={project.title} delay={index * 100}>
               <article className="signature-tilt executive-card flex h-full flex-col rounded-xl p-7">
-                <p className="text-xs font-extrabold uppercase tracking-normal text-accent">Project {index + 1}</p>
-                <h2 className="mt-4 font-display text-3xl font-extrabold text-foreground">{project.title}</h2>
-                <p className="mt-3 text-sm font-extrabold text-primary">{project.stack}</p>
-                <p className="mt-6 text-sm font-semibold leading-7 text-muted-foreground">{project.detail}</p>
+                <p className="text-xs font-bold uppercase tracking-normal text-accent">Project {index + 1}</p>
+                <h2 className="mt-4 font-display text-3xl font-bold text-foreground">{project.title}</h2>
+                <p className="mt-3 text-sm font-bold text-primary">{project.stack}</p>
+                <div className="mt-6 space-y-4 text-sm font-semibold leading-7 text-muted-foreground">
+                  <p><span className="font-bold text-foreground">Problem:</span> {project.problem}</p>
+                  <p><span className="font-bold text-foreground">Process:</span> {project.process}</p>
+                  <p><span className="font-bold text-foreground">Result:</span> {project.result}</p>
+                </div>
               </article>
             </Reveal>
           ))}
@@ -82,7 +89,7 @@ function ExpertisePage() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.75fr_1.25fr]">
           <Reveal>
             <div className="executive-card rounded-xl p-7">
-              <h2 className="font-display text-4xl font-extrabold text-foreground">Search keywords to own</h2>
+              <h2 className="font-display text-4xl font-bold text-foreground">Search keywords to own</h2>
               <p className="mt-5 text-sm font-semibold leading-7 text-muted-foreground">
                 Use these terms across future blogs, project case studies, LinkedIn posts, and page headings to help search engines understand the niche clearly.
               </p>
@@ -91,7 +98,7 @@ function ExpertisePage() {
           <Reveal delay={120}>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill) => (
-                <span key={skill} className="rounded-md border bg-card/80 px-4 py-2 text-sm font-extrabold text-foreground shadow-[var(--shadow-quiet)]">
+                <span key={skill} className="rounded-md border bg-card/80 px-4 py-2 text-sm font-bold text-foreground shadow-[var(--shadow-quiet)]">
                   {skill}
                 </span>
               ))}
@@ -104,14 +111,14 @@ function ExpertisePage() {
         <Reveal>
           <div className="mx-auto flex max-w-7xl flex-col gap-6 rounded-xl ink-panel p-8 sm:p-12 lg:flex-row lg:items-center lg:justify-between">
             <div>
-              <h2 className="font-display text-4xl font-extrabold">Need the technical story in one page?</h2>
+              <h2 className="font-display text-4xl font-bold">Need the technical story in one page?</h2>
               <p className="mt-3 font-semibold opacity-85">Download the CV or start with a direct conversation.</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <a href="/Murtaza_CV_v2.docx" className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-1">
+              <a href="/Murtaza_CV_v2.docx" className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-transform hover:-translate-y-1">
                 Download CV
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center rounded-md border border-primary-foreground/40 px-6 py-3 text-sm font-extrabold text-primary-foreground transition-transform hover:-translate-y-1">
+              <Link to="/contact" className="inline-flex items-center justify-center rounded-md border border-primary-foreground/40 px-6 py-3 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-1">
                 Contact me
               </Link>
             </div>

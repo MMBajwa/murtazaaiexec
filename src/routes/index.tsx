@@ -42,10 +42,10 @@ function Index() {
         <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
           <Reveal>
             <div>
-              <p className="mb-5 inline-flex rounded-md border bg-card/70 px-3 py-2 text-xs font-extrabold uppercase tracking-normal text-muted-foreground">
+              <p className="mb-5 inline-flex rounded-md border bg-card/70 px-3 py-2 text-xs font-bold uppercase tracking-normal text-muted-foreground">
                 AI/ML Engineer · Full-Stack Developer · Agentic AI Practitioner
               </p>
-              <h1 className="font-display text-5xl font-extrabold leading-[0.98] text-foreground sm:text-7xl lg:text-8xl">
+              <h1 className="font-display text-5xl font-bold leading-[0.98] text-foreground sm:text-7xl lg:text-8xl">
                 The company is me. The product is execution.
               </h1>
               <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-muted-foreground">
@@ -54,13 +54,13 @@ function Index() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/expertise"
-                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-extrabold text-primary-foreground shadow-[var(--shadow-executive)] transition-transform hover:-translate-y-1"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-[var(--shadow-executive)] transition-transform hover:-translate-y-1"
                 >
                   View capability
                 </Link>
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center rounded-md border bg-card/80 px-6 py-3 text-sm font-extrabold text-foreground transition-transform hover:-translate-y-1"
+                  className="inline-flex items-center justify-center rounded-md border bg-card/80 px-6 py-3 text-sm font-bold text-foreground transition-transform hover:-translate-y-1"
                 >
                   Start a conversation
                 </Link>
@@ -77,7 +77,7 @@ function Index() {
                 loading="eager"
               />
               <div className="absolute bottom-6 left-6 right-6 rounded-lg bg-background/85 p-4 backdrop-blur">
-                <p className="font-display text-xl font-extrabold">Murtaza AI Works</p>
+                <p className="font-display text-xl font-bold">Murtaza AI Works</p>
                 <p className="mt-1 text-sm font-semibold text-muted-foreground">Personal brand. Executive mindset. Technical delivery.</p>
               </div>
             </div>
@@ -91,7 +91,7 @@ function Index() {
             {proofPoints.map((item, index) => (
               <Reveal key={item.value} delay={index * 90}>
                 <article className="executive-card h-full rounded-xl p-6 transition-transform hover:-translate-y-1">
-                  <p className="font-display text-4xl font-extrabold text-primary">{item.value}</p>
+                  <p className="font-display text-4xl font-bold text-primary">{item.value}</p>
                   <p className="mt-3 text-sm font-bold leading-6 text-muted-foreground">{item.label}</p>
                 </article>
               </Reveal>
@@ -104,8 +104,8 @@ function Index() {
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.8fr_1.2fr]">
           <Reveal>
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-normal text-accent">Positioning</p>
-              <h2 className="mt-3 font-display text-4xl font-extrabold text-foreground sm:text-5xl">
+              <p className="text-sm font-bold uppercase tracking-normal text-accent">Positioning</p>
+              <h2 className="mt-3 font-display text-4xl font-bold text-foreground sm:text-5xl">
                 I build like an engineer and pitch like an operator.
               </h2>
             </div>
@@ -131,15 +131,15 @@ function Index() {
           <div className="mx-auto max-w-7xl rounded-xl ink-panel p-8 sm:p-12 lg:p-16">
             <div className="grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end">
               <div>
-                <p className="text-sm font-extrabold uppercase tracking-normal opacity-80">SEO foundation</p>
-                <h2 className="mt-3 font-display text-4xl font-extrabold sm:text-6xl">Rank for the work, not just the name.</h2>
+                <p className="text-sm font-bold uppercase tracking-normal opacity-80">SEO foundation</p>
+                <h2 className="mt-3 font-display text-4xl font-bold sm:text-6xl">Rank for the work, not just the name.</h2>
                 <p className="mt-5 max-w-3xl text-base font-semibold leading-8 opacity-85">
                   The site is structured around keywords clients search for: AI engineer portfolio, full-stack developer Pakistan, React developer, NLP projects, recommendation engine, agentic AI developer, and Figma to code.
                 </p>
               </div>
               <Link
                 to="/expertise"
-                className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-1"
+                className="inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-transform hover:-translate-y-1"
               >
                 Explore proof
               </Link>

@@ -46,8 +46,8 @@ function ContactPage() {
           </Reveal>
           <Reveal delay={120}>
             <div>
-              <p className="text-sm font-extrabold uppercase tracking-normal text-accent">Work with me</p>
-              <h1 className="mt-4 font-display text-5xl font-extrabold leading-tight text-foreground sm:text-7xl">
+              <p className="text-sm font-bold uppercase tracking-normal text-accent">Work with me</p>
+              <h1 className="mt-4 font-display text-5xl font-bold leading-tight text-foreground sm:text-7xl">
                 Let’s turn a technical idea into a credible product.
               </h1>
               <p className="mt-6 max-w-2xl text-lg font-medium leading-8 text-muted-foreground">
@@ -56,8 +56,8 @@ function ContactPage() {
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 {contactLinks.map((item) => (
                   <a key={item.label} href={item.href} className="executive-card rounded-xl p-5 transition-transform hover:-translate-y-1">
-                    <span className="text-xs font-extrabold uppercase tracking-normal text-accent">{item.label}</span>
-                    <span className="mt-2 block break-words text-sm font-extrabold text-foreground">{item.value}</span>
+                    <span className="text-xs font-bold uppercase tracking-normal text-accent">{item.label}</span>
+                    <span className="mt-2 block break-words text-sm font-bold text-foreground">{item.value}</span>
                   </a>
                 ))}
               </div>
@@ -69,11 +69,11 @@ function ContactPage() {
       <section className="px-5 py-14 sm:px-8 lg:py-20">
         <Reveal>
           <div className="mx-auto max-w-7xl rounded-xl ink-panel p-8 sm:p-12 lg:p-16">
-            <h2 className="font-display text-4xl font-extrabold sm:text-6xl">The best first message is specific.</h2>
+            <h2 className="font-display text-4xl font-bold sm:text-6xl">The best first message is specific.</h2>
             <p className="mt-5 max-w-3xl text-base font-semibold leading-8 opacity-85">
               Send the goal, current stage, deadline, and any reference design or dataset. I can respond with the likely technical approach, tools, and delivery plan.
             </p>
-            <a href="mailto:murtazababer672@gmail.com?subject=Project%20Inquiry%20for%20Murtaza%20AI%20Works" className="mt-8 inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-extrabold text-accent-foreground transition-transform hover:-translate-y-1">
+            <a href="mailto:murtazababer672@gmail.com?subject=Project%20Inquiry%20for%20Murtaza%20AI%20Works" className="mt-8 inline-flex items-center justify-center rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-transform hover:-translate-y-1">
               Email project details
             </a>
           </div>
