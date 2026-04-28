@@ -1,6 +1,6 @@
 # 🚀 Muhammad Murtaza Baber Bajwa — AI/ML Engineer Portfolio
 
-🔗 Live Portfolio: https://asimg.github.io/  
+🔗 Live Portfolio: https://murtazaaiexec.netlify.app/  
 💻 GitHub: https://github.com/Murtazas2d6q  
 🔗 LinkedIn: https://linkedin.com/in/muhammad-murtaza-baber-bajwa  
 
