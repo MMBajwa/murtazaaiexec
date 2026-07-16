@@ -25,7 +25,7 @@ export const Route = createFileRoute("/contact")({
 const contactLinks = [
   { label: "Email", value: "murtazababer672@gmail.com", href: "mailto:murtazababer672@gmail.com" },
   { label: "Phone", value: "+92 308 014 3575", href: "tel:+923080143575" },
-  { label: "LinkedIn", value: "muhammad-murtaza-baber-bajwa", href: "https://linkedin.com/in/muhammad-murtaza-baber-bajwa" },
+  { label: "LinkedIn", value: "Muhammad Murtaza Bajwa", href: "https://www.linkedin.com/in/mmbajwa2626/" },
   { label: "GitHub", value: "Murtazas2d6q", href: "https://github.com/Murtazas2d6q" },
 ];
 
