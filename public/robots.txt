@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://murtazaaiexec-eta.vercel.app/sitemap.xml
+Sitemap: https://murtazaaiexec.vercel.app/sitemap.xml
